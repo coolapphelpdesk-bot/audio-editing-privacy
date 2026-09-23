@@ -56,7 +56,7 @@
 
 <header>
   <h1>Privacy Policy</h1>
-  <p>Voice Recorder Audio Editor &middot; last updated <time datetime="2026-08-27">August 27, 2026</time></p>
+  <p>Voice Recorder Audio Editor &middot; last updated <time datetime="2026-09-23">September 23, 2026</time></p>
 </header>
 
 <section class="card">
@@ -66,6 +66,7 @@
     <li>Your audio recordings and edited files are processed <strong>entirely on your device</strong>. Nothing is uploaded to any server.</li>
     <li>The app contains <strong>non-intrusive advertising</strong> via Google AdMob.</li>
     <li>The app does not collect personal data beyond the advertising ID collected by AdMob.</li>
+    <li>Only two things ever reach the developer, and only when you choose to send them: a <strong>feedback message</strong> you write, and an optional <strong>anonymous vote</strong> for your favourite app theme.</li>
   </ul>
 </section>
 
@@ -85,7 +86,7 @@
 
 <section class="card">
   <h2>3. Data stored on your device</h2>
-  <p>All audio recordings, edits, and exports remain exclusively on your device. Nothing leaves your device unless you explicitly share a file through Android&rsquo;s system share sheet.</p>
+  <p>All audio recordings, edits, and exports remain exclusively on your device. Nothing leaves your device unless you explicitly share a file through Android&rsquo;s system share sheet, send feedback, or vote in the theme survey.</p>
   <table>
     <thead><tr><th>Item</th><th>Where</th><th>Sent off device?</th></tr></thead>
     <tbody>
@@ -93,8 +94,11 @@
       <tr><td>Favorites and recent files</td><td>Local app database</td><td><span class="badge">Never</span></td></tr>
       <tr><td>App settings (theme, language)</td><td>Local DataStore</td><td><span class="badge">Never</span></td></tr>
       <tr><td>Exported files</td><td>Folders you choose</td><td><span class="badge">Only if you share</span></td></tr>
+      <tr><td>Feedback: message type, subject and message; your email address if you choose to enter it; app version; device model; Android version</td><td>Sent to the developer&rsquo;s feedback service</td><td><span class="badge">Only when you tap <em>Send</em></span></td></tr>
+      <tr><td>Theme vote: the colour theme you picked, light or dark mode, app version and app language</td><td>Sent to the developer&rsquo;s feedback service</td><td><span class="badge">Only when you tap <em>Vote</em></span></td></tr>
     </tbody>
   </table>
+  <p>The theme vote comes from the &ldquo;Which look do you like best?&rdquo; survey and contains <strong>no device model, no identifier and no contact details</strong>. Neither feedback nor votes include your recordings, audio files or file names.</p>
 </section>
 
 <section class="card">
@@ -107,7 +111,7 @@
       <tr><td><code>FOREGROUND_SERVICE</code> + <code>FOREGROUND_SERVICE_MICROPHONE</code></td><td>Run scheduled recordings at the set time, even in the background</td><td>When you schedule a recording</td></tr>
       <tr><td><code>SCHEDULE_EXACT_ALARM</code></td><td>Trigger scheduled recordings on time</td><td>When you schedule a recording</td></tr>
       <tr><td><code>WRITE_SETTINGS</code></td><td>Only when the ringtone maker sets a sound as ringtone/notification/alarm</td><td>When you use the ringtone maker</td></tr>
-      <tr><td><code>INTERNET</code> + <code>ACCESS_NETWORK_STATE</code></td><td>Load advertisements via Google AdMob</td><td>Auto-granted (normal permission)</td></tr>
+      <tr><td><code>INTERNET</code> + <code>ACCESS_NETWORK_STATE</code></td><td>Load advertisements via Google AdMob; send feedback and theme votes you choose to send</td><td>Auto-granted (normal permission)</td></tr>
     </tbody>
   </table>
 </section>
@@ -116,6 +120,7 @@
   <h2>5. Network activity and third parties</h2>
   <p>All audio recording and editing happens on-device. The app integrates <strong>Google AdMob</strong> for non-intrusive advertising. AdMob may collect device information, advertising IDs, and IP addresses to serve ads. This data is managed by Google and is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>.</p>
   <p>The app contains <strong>no analytics SDKs, no crash-reporting SDKs, and no social or attribution SDKs</strong>. All other libraries operate entirely on-device and do not transmit data.</p>
+  <p><strong>Feedback and theme votes</strong> you send go over HTTPS to the developer&rsquo;s own feedback service, hosted on Google Cloud. They are used only to reply to you and improve the app, and are never sold or shared.</p>
   <p>When you share an audio file via the system share sheet, the app passes a local file URI to the app you choose. The developer does not see what you share.</p>
 </section>
 
@@ -128,11 +133,12 @@
   <h2>7. Data retention and deletion</h2>
   <p>All data you create in Voice Recorder Audio Editor remains on your device until you delete it inside the app, clear the app&rsquo;s storage in <em>Android Settings &rarr; Apps &rarr; Voice Recorder Audio Editor &rarr; Storage &rarr; Clear storage</em>, or uninstall the app.</p>
   <p>Recordings and exported files can be deleted manually through your device&rsquo;s file manager.</p>
+  <p>Feedback messages are kept only as long as needed to answer and act on them. Theme votes are anonymous and cannot be linked back to you. To have feedback you sent deleted, email the address below.</p>
 </section>
 
 <section class="card">
   <h2>8. Security</h2>
-  <p>App data is held in the app&rsquo;s private storage, protected by Android&rsquo;s built-in application sandboxing. The app is distributed through the Google Play Store, which verifies the developer signing key on every update.</p>
+  <p>App data is held in the app&rsquo;s private storage, protected by Android&rsquo;s built-in application sandboxing. Feedback and votes are sent over encrypted HTTPS connections. The app is distributed through the Google Play Store, which verifies the developer signing key on every update.</p>
 </section>
 
 <section class="card">
